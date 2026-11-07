@@ -36,9 +36,15 @@ h3 { font-size: 1.5rem; margin: .7rem 0; }
 .button:hover { text-decoration: underline; }
 .hero-visual {
   display: grid;
-  place-items: center;
-  padding: clamp(1rem, 4vw, 3rem);
-  background: linear-gradient(#f7f3ea66, #f7f3ea66), url("assets/language-network-hero.webp") center / contain no-repeat;
+  grid-template-columns: minmax(0, 2fr) minmax(0, 3fr);
+  gap: clamp(.75rem, 2vw, 1.5rem);
+  align-items: center;
+}
+.hero-art {
+  display: block;
+  width: 100%;
+  height: auto;
+  mix-blend-mode: multiply;
 }
 .portrait {
   display: block;
